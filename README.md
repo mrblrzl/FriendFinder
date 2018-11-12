@@ -1,1 +1,2 @@
 # FriendFinder
+Aswer a few questions and try out this compatibility-based "FriendFinder" application. Application will take in your results and then compare answers with those from other users. The application will then display your best overall match.

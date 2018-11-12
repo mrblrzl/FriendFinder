@@ -1,7 +1,7 @@
 var friendsArray = [
   {
     "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://media.golfdigest.com/photos/5919d5f8a6f9b9042d76c7a7/master/w_768/Vrabel-bitmoji.png",
     "scores":[
         5,
         1,
@@ -17,7 +17,7 @@ var friendsArray = [
     },
     {
       "name":"Laura",
-      "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+      "photo":"https://i.redd.it/iza834jikpq01.jpg",
       "scores":[
           1,
           1,
@@ -33,7 +33,7 @@ var friendsArray = [
   },
   {
     "name":"Juan",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbhAD5ql_aPIPSOCCGbn8iCnAJZgQ6KXeZYdZbA984Gokl1On",
     "scores":[
         1,
         2,
@@ -49,7 +49,7 @@ var friendsArray = [
 },
 {
   "name":"John",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "photo":"http://da8lb468m8h1w.cloudfront.net/v2/cpanel/9121796-122669297_1-s4-v1.png?palette=1",
   "scores":[
       1,
       2,
@@ -65,7 +65,7 @@ var friendsArray = [
 },
 {
   "name":"Arash",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "photo":"https://cdn2.lamag.com/wp-content/uploads/sites/9/2015/08/davidryu.jpg",
   "scores":[
       1,
       7,
