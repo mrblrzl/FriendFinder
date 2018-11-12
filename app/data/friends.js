@@ -1,0 +1,86 @@
+var friendsArray = [
+  {
+    "name":"Ahmed",
+    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ],
+    },
+    {
+      "name":"Laura",
+      "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+      "scores":[
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+  },
+  {
+    "name":"Juan",
+    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "scores":[
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4
+      ]
+},
+{
+  "name":"John",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      1,
+      2,
+      1,
+      3,
+      1,
+      4,
+      1,
+      5,
+      1,
+      6
+    ]
+},
+{
+  "name":"Arash",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      1,
+      7,
+      1,
+      8,
+      1,
+      1,
+      1,
+      2,
+      1,
+      3
+    ]
+}
+  
+  ];
+  // inner loop for scores and friends 
+  // Note how we export the array. This makes it accessible to other files using require.
+  module.exports = friendsArray;

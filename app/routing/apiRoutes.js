@@ -18,7 +18,7 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get("/api/friends", function(req, res) {
-    res.json(friendsData);
+    res.json(friends);
   });
 
 
@@ -34,25 +34,53 @@ module.exports = function(app) {
     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body parsing middleware
-    if (tableData.length < 5) {
-      tableData.push(req.body);
-      res.json(true);
+  
+    var bestMatch = {
+      name: "",
+      photo: "",
+      friendDifference: 1000
+    };
+
+    // Here we take the result of the user"s survey POST and parse it.
+    var userData = req.body;
+    var userScores = userData.scores;
+
+    // This variable will calculate the difference between the user"s scores and the scores of
+    // each user in the database
+    var totalDifference = 0;
+
+ 
+    for (var i = 0; i < friends.length; i++) {
+
+      console.log(friends[i].name);
+      totalDifference = 0;
+
+      
+      for (var j = 0; j < friends[i].scores[j]; j++) {
+
+        // We calculate the difference between the scores and sum them into the totalDifference
+        totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+
+        // If the sum of differences is less then the differences of the current "best match"
+        if (totalDifference <= bestMatch.friendDifference) {
+
+          // Reset the bestMatch to be the new friend.
+          bestMatch.name = friends[i].name;
+          bestMatch.photo = friends[i].photo;
+          bestMatch.friendDifference = totalDifference;
+        }
+      }
     }
-    else {
-      waitListData.push(req.body);
-      res.json(false);
-    }
+
+  
+    friends.push(userData);
+
+    // Return a JSON with the user's bestMatch. This will be used by the HTML in the next page
+    res.json(bestMatch);
+
+
+
   });
 
-  // ---------------------------------------------------------------------------
-  // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
 
-//   app.post("/api/clear", function(req, res) {
-//     // Empty out the arrays of data
-//     tableData.length = [];
-//     waitListData.length = [];
-
-//     res.json({ ok: true });
-//   });
 };
